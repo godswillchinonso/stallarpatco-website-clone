@@ -37,7 +37,7 @@ class Router {
 		$uri = "/" . trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), "/");
 
 		// Remove project folder (if running inside subfolder)
-		$uri = str_replace("/stallarpatcoltd", "", $uri);
+		$uri = str_replace("/", "", $uri);
 
 		$callback = $this->routes[$method][$uri] ?? null;
 
