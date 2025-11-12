@@ -1,0 +1,6 @@
+# Dependency directories
+vendor/
+
+#logs and cache files
+logs/
+*.log

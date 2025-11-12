@@ -1,0 +1,147 @@
+Perfect 👍 Here’s your **complete Git Command Roadmap**, organized from **Beginner → Advanced**, exactly as it would appear in your PDF.
+This is everything you’ll need to master Git for personal and remote team work.
+
+---
+
+# 🧭 Complete Git Command Roadmap (Beginner → Advanced)
+
+---
+
+## 🅐 Git Setup Commands (First-time configuration)
+
+| Command                                           | Description                                    |
+| ------------------------------------------------- | ---------------------------------------------- |
+| `git --version`                                   | Check if Git is installed and see the version. |
+| `git config --global user.name "Your Name"`       | Set your name (shows on every commit).         |
+| `git config --global user.email "your@email.com"` | Set your email address.                        |
+| `git config --global core.editor "code --wait"`   | Set VS Code (or another editor) as default.    |
+| `git config --list`                               | See all your global Git configuration.         |
+| `git help <command>`                              | Get help for any Git command.                  |
+
+---
+
+## 🅑 Repository Initialization and Status
+
+| Command       | Description                                       |
+| ------------- | ------------------------------------------------- |
+| `git init`    | Initialize a new Git repository.                  |
+| `git status`  | Show the current state of your working directory. |
+| `ls -a`       | Show hidden files (including `.git` directory).   |
+| `rm -rf .git` | Delete Git tracking from a project.               |
+
+---
+
+## 🅒 Staging Area (Preparing files for commit)
+
+| Command                       | Description                           |
+| ----------------------------- | ------------------------------------- |
+| `git add <file>`              | Add a single file to staging.         |
+| `git add <folder>/`           | Add all files inside a folder.        |
+| `git add .`                   | Add all changes in current directory. |
+| `git restore --staged <file>` | Unstage a file (undo `git add`).      |
+| `git reset`                   | Unstage all files that were added.    |
+
+---
+
+## 🅓 Commit Commands
+
+| Command                           | Description                                                    |
+| --------------------------------- | -------------------------------------------------------------- |
+| `git commit -m "Your message"`    | Create a commit with a short message.                          |
+| `git commit -a -m "Your message"` | Add & commit all tracked changes at once.                      |
+| `git log`                         | Show all commits history.                                      |
+| `git show`                        | Show details of the latest commit.                             |
+| `git show --name-only`            | Show which files changed in the last commit.                   |
+| `git diff`                        | Show the difference between working directory and last commit. |
+
+---
+
+## 🅔 Branching and Merging
+
+| Command                  | Description                                |
+| ------------------------ | ------------------------------------------ |
+| `git branch`             | List all branches.                         |
+| `git branch <name>`      | Create a new branch.                       |
+| `git checkout <branch>`  | Switch to another branch.                  |
+| `git switch <branch>`    | Newer and safer version of `checkout`.     |
+| `git merge <branch>`     | Merge another branch into the current one. |
+| `git branch -d <branch>` | Delete a branch after merging.             |
+| `git branch -M main`     | Rename current branch to “main”.           |
+
+---
+
+## 🅕 Working with Remote Repositories
+
+| Command                            | Description                                |
+| ---------------------------------- | ------------------------------------------ |
+| `git remote add origin <repo_url>` | Link local repo to GitHub repository.      |
+| `git remote -v`                    | Verify remote repository URLs.             |
+| `git push -u origin main`          | Push commits to GitHub for the first time. |
+| `git push`                         | Push commits to remote branch.             |
+| `git pull`                         | Fetch and merge updates from remote repo.  |
+| `git fetch`                        | Download commits without merging.          |
+| `git clone <repo_url>`             | Copy a remote repository to your computer. |
+
+---
+
+## 🅖 Undoing Changes and Recovery
+
+| Command                    | Description                                          |
+| -------------------------- | ---------------------------------------------------- |
+| `git restore <file>`       | Undo changes before committing.                      |
+| `git checkout -- <file>`   | Old way to discard changes.                          |
+| `git revert <commit_hash>` | Undo a specific commit safely by creating a new one. |
+| `git reset --soft HEAD~1`  | Undo last commit but keep files staged.              |
+| `git reset --hard HEAD~1`  | Completely undo last commit and remove changes.      |
+| `git clean -fd`            | Remove untracked files and folders.                  |
+
+---
+
+## 🅗 Inspecting and Viewing Information
+
+| Command                           | Description                          |
+| --------------------------------- | ------------------------------------ |
+| `git log --oneline`               | Compact commit history.              |
+| `git log --graph --oneline --all` | Visual branch tree.                  |
+| `git status`                      | Check current repo state.            |
+| `git diff --staged`               | Show staged changes ready to commit. |
+| `git ls-tree -r HEAD --name-only` | List all files in the branch.        |
+
+---
+
+## 🅘 Collaboration and Advanced Operations
+
+| Command                         | Description                                  |
+| ------------------------------- | -------------------------------------------- |
+| `git stash`                     | Temporarily save changes without committing. |
+| `git stash pop`                 | Reapply stashed changes.                     |
+| `git tag <name>`                | Mark a specific point (e.g. v1.0).           |
+| `git rebase`                    | Move or combine a sequence of commits.       |
+| `git cherry-pick <commit_hash>` | Apply a specific commit from another branch. |
+| `git blame <file>`              | Show who changed each line of a file.        |
+
+---
+
+## 🅙 Git Ignore and Clean Setup
+
+| Command                       | Description                                                 |
+| ----------------------------- | ----------------------------------------------------------- |
+| `.gitignore`                  | File to tell Git which files/folders to ignore.             |
+| `git rm -r --cached <folder>` | Remove a folder from tracking after adding to `.gitignore`. |
+| `git status`                  | Verify ignored files are no longer tracked.                 |
+
+---
+
+## 🅚 Everyday Git Workflow Summary
+
+| Step | Command                   | Purpose                            |
+| ---- | ------------------------- | ---------------------------------- |
+| 1️⃣  | `git status`              | Check what changed.                |
+| 2️⃣  | `git add .`               | Stage your changes.                |
+| 3️⃣  | `git commit -m "message"` | Commit your changes.               |
+| 4️⃣  | `git push`                | Send your work to GitHub.          |
+| 5️⃣  | `git pull`                | Get latest updates from your team. |
+
+---
+
+Would you like me to include a **“Real-World Git Workflow Example”** (step-by-step flow from creating a project → pushing to GitHub → collaborating) at the end before turning this into a PDF when tools are available again?

@@ -1,0 +1,19 @@
+{
+    "name": "dell/micheal_work",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "App\\Controllers\\": "app/controllers/",
+            "App\\Models\\": "app/models/",
+            "App\\Core\\": "app/core/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sonex Godswill Chinonso"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^7.0"
+    }
+}
